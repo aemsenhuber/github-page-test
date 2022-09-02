@@ -1,5 +1,5 @@
 markdown: kramdown
-remote_theme: benbalter/retlab
+remote_theme: evanca/quick-portfolio
 title: personal website
 author: Giovanni Picogna
 description: work and hobbies
