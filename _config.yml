@@ -1,4 +1,5 @@
-theme: minima
+markdown: kramdown
+remote_theme: cotes2020/jekyll-theme-chirpy 
 title: personal website
 author: Giovanni Picogna
 description: work and hobbies
