@@ -1,3 +1,8 @@
+---
+title: Home page
+date: 2022-09-02
+---
+
 Welcome to my blog
 ---
 
