@@ -13,38 +13,8 @@ Local resources
 Remote resources
 ------
 
-usm
----
+- [usm](usm.md)
 
-properties:
+- [c2pap](c2pap.md)
 
-   - 
-
-accesible via:
-
-   - ssh via ```errc1```, ```ercol1```, ```ltsp01```: 
-     ```user@cluster.hpc.physik.uni-muenchen.de```
-
-   - [jupyterhub](https://jupyter.physik.uni-muenchen.de)
-
-c2pap
----
-
-properties:
-
-   - 
-
-accesible via:
-
-   - 
-
-linux-cluster
----
-
-properties:
-
-   - 
-
-accesible via:
-
-   - 
+- [linux-cluster](linux.md)
