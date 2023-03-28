@@ -12,7 +12,7 @@ errc1
 
 properties:
 
-  - Intel Xeon CPU E7-4850 v2 @ 2.30GHz
+  - [Intel Xeon CPU E7-4850 v2 @ 2.30GHz](https://ark.intel.com/content/www/us/en/ark/products/75248/intel-xeon-processor-e74850-v2-24m-cache-2-30-ghz.html)
   <img style="float: right;" alt="Intel Xeon E7-4850" width="300" src="/github-page-test/docs/assets/images/intel-xeon-e7.jpg">
   
   - Cache: 24 MB L3, Memory: 676 GB
@@ -21,7 +21,7 @@ properties:
 
 accessible via:
 
-  - ssh from ltsp01 (aka moon): 
+  - ssh via ```ltsp01``` (aka moon): 
     ```user@errc1.usm.uni-muenchen.de```
 
   - [jupyter-notebook](https://errc1.usm.uni-muenchen.de:9999)
