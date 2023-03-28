@@ -60,7 +60,7 @@ accessible via:
   - ssh via ```ltsp01``` (aka moon): 
     ```user@ercol1.usm.uni-muenchen.de```
   
-  - part to the user group video needed to access the graphic card (ask Tadziu)
+  - you need to be part of the user group ```video``` needed to access the graphic card (ask Tadziu)
 
 
 Remote resources
@@ -68,24 +68,36 @@ Remote resources
 
 usm
 ---
+
 properties:
-   > 
+
+   - 
 
 accesible via:
-   > 
+
+   - ssh via ```errc1```, ```ercol1```, ```ltsp01```: 
+     ```user@cluster.hpc.physik.uni-muenchen.de```
+
+   - [jupyterhub](https://jupyter.physik.uni-muenchen.de)
 
 c2pap
 ---
+
 properties:
-   > 
+
+   - 
 
 accesible via:
-   > 
+
+   - 
 
 linux-cluster
 ---
+
 properties:
-   > 
+
+   - 
 
 accesible via:
-   > 
+
+   - 
