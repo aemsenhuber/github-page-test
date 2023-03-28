@@ -1,31 +1,68 @@
 ---
-title: ercol1
+title: linux-cluster
 date: 2023-03-28
 ---
 
-ercol1
+[CoolMUC-2](https://doku.lrz.de/display/PUBLIC/CoolMUC-2)
 ---
 
 properties:
 
 - CPUs:
 
-  - [Intel Xeon Gold 6138 CPU @ 2.00GHz](https://ark.intel.com/content/www/us/en/ark/products/120476/intel-xeon-gold-6138-processor-27-5m-cache-2-00-ghz.html)
-  <img style="float: right;" alt="Intel Xeon Gold 6138" width="150" src="/github-page-test/docs/assets/images/intel-xeon-gold.jpg">
+  - 2x [Intel Xeon CPU E5-2697 v3 @ 2.60GHz](https://ark.intel.com/content/www/us/en/ark/products/81059/intel-xeon-processor-e52697-v3-35m-cache-2-60-ghz.html)
+  <img style="float: right;" alt="Intel Xeon E5-2697" width="150" src="/github-page-test/docs/assets/images/intel-xeon.jpg">
 
-  - Cache: 27.5 MB L3, Memory: 1 TB
+  - 32 kB L1 per core, 256 kB L2 cache per core, 4x18 MB L3 cache (shared)
 
-  - 20 cores, 160 virtual cores with HT
+  - number of nodes: 812
 
-- GPU:
+  - cores per node: 28 (56 with HT)
 
-  - Nvidia Tesla V100S
-  <img style="float: right;" alt="Nvidia Tesla V100S" width="200" src="/github-page-test/docs/assets/images/nvidia-tesla-v100s.jpg">
+  - memory per node: 64 GB
 
-accessible via:
+- accessible via:
 
   - ssh via ```ltsp01``` (aka moon):
-    ```user@ercol1.usm.uni-muenchen.de```
+    ```user@lxlogin(1-4).lrz.de```
 
-  - you need to be part of the user group ```video``` to access the graphic card ([ask Tadziu](mailto:hoffmann@usm.uni-muenchen.de))
+  - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
 
+[CoolMUC-3](https://doku.lrz.de/display/PUBLIC/CoolMUC-3)
+---
+
+properties:
+
+- CPUs:
+
+  - [Intel Xeon Phi Processor 7210F @ 1.30GHz](https://ark.intel.com/content/www/de/de/ark/products/94709/intel-xeon-phi-processor-7210f-16gb-1-30-ghz-64-core.html)
+  <img style="float: right;" alt="Intel Xeon Phi 7210F" width="150" src="/github-page-test/docs/assets/images/intel-xeon-phi.jpg">
+
+  - Cache L2: 32 MB
+
+  - number of nodes: 148
+
+  - cores per node: 64
+
+  - memory per node: 96 GB
+
+- accessible via:
+
+  - ssh via ```ltsp01``` (aka moon):
+    ```user@lxlogin8.lrz.de```
+
+  - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
+
+[LRZ AI Systems](https://doku.lrz.de/display/PUBLIC/LRZ+AI+Systems)
+---
+
+properties:
+
+  - <img style="float: left;" alt="LRZ AI" width="1000" src="/github-page-test/docs/assets/images/lrz-ai.png">
+
+- accesible via:
+
+  - ssh via ```ltsp01``` (aka moon):
+    ```user@login.ai.lrz.de```
+
+  - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))

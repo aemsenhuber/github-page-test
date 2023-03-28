@@ -29,3 +29,6 @@ accessible via:
 
   - you need to be part of the user group ```video``` to access the graphic card ([ask Tadziu](mailto:hoffmann@usm.uni-muenchen.de))
 
+local support:
+
+  - channel #ercol1 on Slack
