@@ -69,9 +69,19 @@ Thin client machines to replace PCs (reserved for practicals at the moment).
 
 ## 3. Module command
 
-The module command works by modifying your environment (mostly the PATH and LDLIBRARYPATH variables). There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modules](https://doku.lrz.de/display/PUBLIC/Environment+Modules).
+The module command works by modifying your environment (mostly the PATH and LDLIBRARYPATH variables). 
 
-module availtells you what modules are available.module listtells you which modules you are currently using.module load intelloads the default version of the Intel module.module load intel/17.0loads version 17.0 of the Intel compiler suite.module unload intelunloads the Intel version in use.
+There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modules](https://doku.lrz.de/display/PUBLIC/Environment+Modules).
+
+`module avail` tells you what modules are available.
+
+`module list` tells you which modules you are currently using.
+
+`module load intel` loads the default version of the Intel module.
+
+`module load intel/17.0` loads version 17.0 of the Intel compiler suite.
+
+`module unload intel` unloads the Intel version in use.
 
 ## 4. x2go
 
