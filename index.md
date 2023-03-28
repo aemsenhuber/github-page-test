@@ -11,10 +11,28 @@ Local resources
 - [ercol1](ercol1.md)
 
 Remote resources
-------
+---
 
 - [usm](usm.md)
 
 - [c2pap](c2pap.md)
 
 - [linux-cluster](linux.md)
+
+User guidelines
+---
+
+- [login](login.md)
+
+- [modules](module.md)
+
+- [gpu](gpu.md)
+
+- [compilers](compilers.md)
+
+- [profilers](profilers.md)
+
+- [misc](misc.md)
+
+- [backup](backup.md)
+
