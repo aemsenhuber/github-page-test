@@ -11,7 +11,9 @@ errc1
 ---
 properties:
   > Intel Xeon CPU E7-4850 v2 @ 2.30GHz
+  > 
   > Cache: 24 MB L3, Memory: 676 GB
+  > 
   > 12 cores, 96 virtual cores with HT
 
 accessible via:
