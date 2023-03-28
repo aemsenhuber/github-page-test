@@ -21,6 +21,12 @@ properties:
 
   - memory per node: 64 GB
 
+- GPUs:
+
+  - 4x NVIDIA A100 40GB
+
+  - One GPU is reserved for access via slurm jobs. The remaining 3 GPUs are available via the cloud computing interface as the flavours pr85tu.nvidia-a100.1 (1 GPU), pr85tu.nvidia-a100.2 (2 GPUs), or pr85tu.nvidia-a100.3 (3 GPUs)
+
 - storage:
 
   - 2Tb in work directory ```/gpfs/work/pr83pa```
