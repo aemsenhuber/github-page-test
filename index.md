@@ -12,6 +12,7 @@ properties:
   > Intel Xeon CPU E7-4850 v2 @ 2.30GHz
   > Cache: 24 MB L3, Memory: 676 GB
   > 12 cores, 96 virtual cores with HT
+
 accessible via:
   > ssh from ltsp01 (aka moon): user@errc1.usm.uni-muenchen.de
   > jupyter-notebook: https://errc1.usm.uni-muenchen.de:9999
@@ -20,12 +21,14 @@ accessible via:
 ercol1
 ---
 properties:
+CPUs:
   > Intel Xeon Gold 6138 CPU @ 2.00GHz
   > Cache: 27.5 MB L3, Memory: 1 TB
   > 20 cores, 160 virtual cores with HT
+GPU:
+  > Nvidia Tesla V100S
  
 accessible via:
   > ssh from ltsp01 (aka moon): 
     user@ercol1.usm.uni-muenchen.de
-  > 
 
