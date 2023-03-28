@@ -24,7 +24,7 @@ accessible via:
 
 storage:
 
-  - 30 TB on ```/e/arch/``` (backed-up daily)
+  - 30 TB on ```/e/arch/``` (backed-up weekly, see [backup](backup.md))
 
   - 1.1 TB on ```/scratch/```
 
