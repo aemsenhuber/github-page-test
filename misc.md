@@ -51,21 +51,15 @@ Some good emacs modifications (add at the end of ~/.emacs file)
 ```
 
 
-Skip to main content	
-USM_Internal
-Saved
-
 This document contains information primarily on the computing systems hosted at USM. For information on the computing services provided by LMU Physik or by LRZ see their respective web pages:
 
     https://www.it.physik.uni-muenchen.de
 
     https://www.lrz.de
 
-#
-USM computer systems organization
-#
+# USM computer systems organization
 
-#1.  Computer systems
+## 1.  Computer systems
 
 ##Servers
 
@@ -99,7 +93,7 @@ ltsp04–19
 
 Thin client machines to replace PCs (reserved for practicals at the moment).
 
-#2.  Users
+## 2. Users
 
     Any of the machines can be used by anyone with a valid USM account with an up-to-date password.
 
@@ -121,13 +115,13 @@ Thin client machines to replace PCs (reserved for practicals at the moment).
 
     A serious DNS attack for instance can mean that ltsp01 and so on are not able to look up your information and you will be blocked. (It’s a bit more complicated as ltsp01 etc. cache much of the information to speed things up so you may possibly be lucky and be able to log in anyway.)
 
-#3. Module command
+## 3. Module command
 
 The module command works by modifying your environment (mostly the PATH and LDLIBRARYPATH variables). There’s a description at https://doku.lrz.de/display/PUBLIC/Environment+Modules.
 
 module availtells you what modules are available.module listtells you which modules you are currently using.module load intelloads the default version of the Intel module.module load intel/17.0loads version 17.0 of the Intel compiler suite.module unload intelunloads the Intel version in use.
 
-#4. x2go
+## 4. x2go
 
     X is slow remotely (and if your internet connection is interrupted, your session will be killed).
 
@@ -145,7 +139,7 @@ module availtells you what modules are available.module listtells you which modu
 
     Tadziu or Keith need to install/start an x2go server on the target machine. If you can ssh to a machine but not use x2go the server probably isn’t running. Please contact us in this case.
 
-#5. Queuing, scratch, and backup
+## 5. Queuing, scratch, and backup
 
     In general there is no queuing. On the whole people behave reasonably and a “gentle” hint has usually sufficed.
 
@@ -167,7 +161,7 @@ module availtells you what modules are available.module listtells you which modu
 
     /tmp is available and local but has limited space, shared with the system. When the disk is full the machine will not work properly, if at all. (Another reason why you may not be able to log in on occasion.)
 
-#6. System support
+## 6. System support
 
     Generally, contact Tadziu or Keith if you have system requests or there are problems with the system. If it’s something that Rudi needs to deal with it will be passed on.
 
@@ -177,7 +171,7 @@ module availtells you what modules are available.module listtells you which modu
 
     Use zypper se "package" to find out if SUSE supplies a package of interest. If they do just ask Keith or Tadziu to install it.
 
-#7. E-mail and file sharing
+## 7. E-mail and file sharing
 
     Your e-mail and login accounts are completely separate even though the username is the same for both.
 
@@ -202,7 +196,7 @@ FYI: e-mail addresses
 
     You can forward mail from one to the other. Do this by logging in to horde (https://www.usm.uni-muenchen.de/horde/login.php) and choosing “Mail”, “Filters”.
 
-#8. Outdated software
+## 8. Outdated software
 
     Installing software or updating outdated software is easy if SUSE provides an update. If not then it will depend.
 
@@ -224,7 +218,7 @@ FYI: e-mail addresses
 
     Bear in mind: we have of order 100 registered users, of order 100 machines (including PCs) and SUSE has 30000–40000 packages in all. There’s no way that 3 people can cater for every need.
 
-#9. Guests
+## 9. Guests
 
     Short-term guests who want to make light use of the Internet should just use Bayern-WLAN which only requires agreeing to the terms and conditions. It is also available throughout the City.
 
@@ -242,7 +236,7 @@ FYI: e-mail addresses
 
     If they have an ultra-thin laptop with an external Ethernet adapter then plug it in and give us its hardware address (it’s the one that appears after the device is plugged in).
 
-#10. Miscellaneous
+## 10. Miscellaneous
 
     If you need more computing power it is possible to use the Linux system at the LRZ. Get in touch with your LRZ master user (Keith).
 
@@ -252,9 +246,9 @@ FYI: e-mail addresses
 
     You can subscribe to the “alle” list in your mail client. Look for “subscribe” and choose usm-bulletin-board (right at the bottom).
 
-#Information for computer users at the USM
+# Information for computer users at the USM
 
-#Passwords
+## Passwords
 
 If you have an account at the USM you have two passwords, one for logging in and one for email. Do not choose the same password for email as for logging in. This is so that when you read email over the web in not-so-well-trusted locations, if your email password gets compromised, your login account (and our machines) will not be.
 
@@ -266,7 +260,7 @@ To change your email password:
 
     connect to https://kmaster.usm.lmu.de/ with a web browser, log in, click on your name at the top right, and choose “Change password”.
 
-#Email
+## Email
 
 Your email address at the USM is username**@usm.uni-muenchen.de** or username**@usm.lmu.de**. Mail sent to either address will arrive in your inbox.
 
@@ -274,13 +268,13 @@ You can read and send email using your favorite IMAP- and SMTP-capable mail prog
 
 If you prefer using a dedicated email program, here are the required settings:
 
-    Mailbox server (IMAP) mailget.usm.uni-muenchen.de using a secure connection (SSL) on port number 993.
+- Mailbox server (IMAP) mailget.usm.uni-muenchen.de using a secure connection (SSL) on port number 993.
 
-    Outgoing mail server (SMTP) mailto.usm.uni-muenchen.de using a secure connection (STARTTLS) on port number 587.
+- Outgoing mail server (SMTP) mailto.usm.uni-muenchen.de using a secure connection (STARTTLS) on port number 587.
 
 Both mailbox server and outgoing mail server require authentication using your username and email password.
 
-#Email forwarding
+## Email forwarding
 
 Email forwarding is achieved via sieve, which runs entirely within the mail server (a .forward in your home directory will not work because the mail server does not look into the users’ home directories). You can write a sieve script by hand and upload it to the mail server or you can use Horde to set everything up for you (look under Mail → Filters).
 
@@ -288,22 +282,28 @@ For those writing their own scripts, the sieve language is well documented on th
 
 To upload a sieve file to the mail server:
 
-    On one of the Linux machines change into the directory where your sieve file is located and execute sieve-connect mailget.usm.uni-muenchen.de, which should ask you for your (email) password.
+- On one of the Linux machines change into the directory where your sieve file is located and execute sieve-connect mailget.usm.uni-muenchen.de, which should ask you for your (email) password.
 
-    If the connection succeeds, from within sieve-connect do:put sievefile
-    activate sievefile
-    quitwhere sievefile is the name of your sieve file. If your sieve script contains errors it will not be accepted.
+- If the connection succeeds, from within sieve-connect do:
+```
+put sievefile
+activate sievefile
+quit
+```
+where ```sievefile``` is the name of your sieve file. 
+If your sieve script contains errors it will not be accepted.
 
 The sieve script remains active until you (within sieve-connect) either deactivate or delete it or activate another script. You can also list your uploaded scripts in sieve-connect.
 
-#Wireless network
+## Wireless network
 
 The wireless network is managed by the LRZ. The simplest way to connect to the wireless network is through eduroam.
 
-    If your home institute participates in eduroam and you have already set it up there, then it should work here as well without further changes.
+- If your home institute participates in eduroam and you have already set it up there, then it should work here as well without further changes.
 
-    If not: here are the required settings (the LRZ has more detailed instructions, see https://www.lrz.de/services/netz/wlan/eduroam/):
+- If not: here are the required settings (the LRZ has more detailed instructions, see https://www.lrz.de/services/netz/wlan/eduroam/):
 
+```
         Network name (SSID): eduroam.
 
         Security protocol: WPA2 Enterprise.
@@ -317,25 +317,27 @@ The wireless network is managed by the LRZ. The simplest way to connect to the w
         Identity (user name): username**@usm** (this is not an email address but a user name with an appended RADIUS authentication realm).
 
         Password: your email password.
+```
 
-    Your operating system may ask/require you to accept/install a corresponding server certificate.
+- Your operating system may ask/require you to accept/install a corresponding server certificate.
 
-    macOS and iPhone users can download a preconfigured profile that uses TTLS and PAP (the one from the LRZ is configured for PEAP and MSCHAPv2 and will not work with RADIUS).
-    When installing the profile you need to enter your identity as username**@usm** and your email password.
+- macOS and iPhone users can download a preconfigured profile that uses TTLS and PAP (the one from the LRZ is configured for PEAP and MSCHAPv2 and will not work with RADIUS).
 
-#Wired network
+- When installing the profile you need to enter your identity as username**@usm** and your email password.
+
+## Wired network
 
 To connect your laptop to the wired ethernet, set the wired network configuration to “automatic” (DHCP) and talk to one of the sysadmins to have the hardware address (MAC address) of your laptop registered with our server.
 
 To find the hardware address:
 
-    on Windows: type the command ipconfig /all into a cmd window and look in the output for physical address.
+- on Windows: type the command ipconfig /all into a cmd window and look in the output for physical address.
 
-    on Linux and macOS: type the command ifconfig −a into a terminal window (console window) and look for HWaddr (Linux) or ether (macOS). (The builtin wired interface is often named eth0 or en0.)
+- on Linux and macOS: type the command ifconfig −a into a terminal window (console window) and look for HWaddr (Linux) or ether (macOS). (The builtin wired interface is often named eth0 or en0.)
 
 In all cases the MAC address will look something like nn**-nn-nn-nn-nn-nn or nn:nn:nn:nn:nn:**nn, where the ns are digits/letters from “0” to “9” and “a” to “f”.
 
-#Mailing lists
+## Mailing lists
 
 There are a number of institute-related mailing lists which may be of interest to you, such as alle for general USM-related topics or students for subjects of interest to Master’s and PhD students and post-docs. Publicly visible mailing lists, for example those created for the participants of a particular teaching course, are advertised on our mailman page (https://www.usm.uni-muenchen.de/mailman/). Consult your supervisor and/or colleagues regarding further mailing lists relevant to your work.
 
@@ -343,17 +345,17 @@ There are a number of institute-related mailing lists which may be of interest t
 
     To unsubscribe from a list, send a mail to listname**-leave@usm.uni-muenchen.de**. Send this mail using the same email account with which you are subscribed to the list.
 
-#Journal access
+## Journal access
 
 Journals for which the LMU has a subscription can be accessed from your laptop, if you have a VPN connection to the MWN (seehttps://www.lrz.de/services/netz/mobil/vpn/) and the correct proxy settings for your browser. The LRZ has an automatic proxy configuration script at**http://pac.lrz.de/. To set this in Pale Moon,for example, go to Preferences → Advanced → Network → Connection Settings, and then chooseAutomatic proxy configuration URL**and enter the above address.
 
-#Using X remotely
+## Using X remotely
 
 You can use VNC or X2go to connect to a remote desktop session. You will need a VPN connection to the Munich university network and the VNC viewer or X2go client software.
 
 You can also use X directly if you have a local X server running (check that your DISPLAY environment variable is correctly set and that you can open local clients) and connect to our machines using ssh −X or ssh −Y.
 
-#Printing
+## Printing
 
 The recommended way to print on the USM printers from your laptop is via the USM CUPS server. (See the instructions on adding a printer for → Linux, → macOS, and → Windows.) To get a list of available printers, go to http://cups.usm.uni-muenchen.de:631/printers/. On the USM Linux machines, you can also use the command lpstat −a to list all printers and their current status. Most of the printers also have an adhesive label indicating the printer’s name.
 
@@ -363,7 +365,7 @@ lpr −o fit-to-page −Pprintername filename
 
 where printername is the name of the printer on which you want to print. See man lpr for a list of available options.
 
-#Poster printer
+## Poster printer
 
 Poster size: The printer’s paper is 36 inches (91.4 cm) wide, which is slightly wider than A0 (84.1 cm). If you absolutely require an A0-size poster, you must manually cut off a strip of approximately 7 cm from the side of your printout. (The printer itself can cut the paper perpendicular to the feed direction, but not parallel.) If you prefer not to cut by hand, you can either use the full width of the paper, giving you a poster somewhat larger than A0, or print your poster rotated by 90 degrees (so that the width of the paper becomes the height of the poster), giving you a poster between A1 and A0 in size.
 
