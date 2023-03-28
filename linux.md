@@ -34,7 +34,7 @@ properties:
 
   - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
 
-- more info at: https://doku.lrz.de/display/PUBLIC/Linux+Cluster
+- more info at [Linux cluster wiki](https://doku.lrz.de/display/PUBLIC/Linux+Cluster)
 
 [CoolMUC-3](https://doku.lrz.de/display/PUBLIC/CoolMUC-3)
 ---
@@ -67,7 +67,7 @@ properties:
 
   - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
 
-- more info at: https://doku.lrz.de/display/PUBLIC/Linux+Cluster
+- more info at [Linux cluster wiki](https://doku.lrz.de/display/PUBLIC/Linux+Cluster)
 
 [LRZ AI Systems](https://doku.lrz.de/display/PUBLIC/LRZ+AI+Systems)
 ---
@@ -89,5 +89,5 @@ properties:
 
   - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
 
-- more info at: https://doku.lrz.de/display/PUBLIC/Linux+Cluster
+- more info at [Linux cluster wiki](https://doku.lrz.de/display/PUBLIC/Linux+Cluster)
 
