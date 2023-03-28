@@ -20,9 +20,9 @@ properties:
 accessible via:
   > ssh from ltsp01 (aka moon): user@errc1.usm.uni-muenchen.de
 
-  > jupyter-notebook: https://errc1.usm.uni-muenchen.de:9999
+  > [jupyter-notebook](https://errc1.usm.uni-muenchen.de:9999)
 
-  > storage: 30 TB on /e/arch/ (backed-up daily), 1.1 TB on /scratch/
+  > storage: 30 TB on "/e/arch/" (backed-up daily), 1.1 TB on "/scratch/"
 
 ercol1
 ---
