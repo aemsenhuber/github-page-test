@@ -21,12 +21,20 @@ properties:
 
   - memory per node: 64 GB
 
+- storage:
+
+  - 10TB in DSS (Data Science Storage)
+
+  - 100GB in ```home``` directory
+
 - accessible via:
 
   - ssh via ```ltsp01``` (aka moon):
     ```user@lxlogin(1-4).lrz.de```
 
   - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
+
+- more info at: https://doku.lrz.de/display/PUBLIC/Linux+Cluster
 
 [CoolMUC-3](https://doku.lrz.de/display/PUBLIC/CoolMUC-3)
 ---
@@ -46,12 +54,20 @@ properties:
 
   - memory per node: 96 GB
 
+- storage:
+
+  - 10TB in DSS (Data Science Storage)
+
+  - 100GB in ```home``` directory
+
 - accessible via:
 
   - ssh via ```ltsp01``` (aka moon):
     ```user@lxlogin8.lrz.de```
 
   - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
+
+- more info at: https://doku.lrz.de/display/PUBLIC/Linux+Cluster
 
 [LRZ AI Systems](https://doku.lrz.de/display/PUBLIC/LRZ+AI+Systems)
 ---
@@ -60,9 +76,18 @@ properties:
 
   - <img style="float: left;" alt="LRZ AI" width="1000" src="/github-page-test/docs/assets/images/lrz-ai.png">
 
+- storage:
+
+  - 10TB in DSS (Data Science Storage)
+
+  - 100GB in ```home``` directory
+
 - accesible via:
 
   - ssh via ```ltsp01``` (aka moon):
     ```user@login.ai.lrz.de```
 
   - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
+
+- more info at: https://doku.lrz.de/display/PUBLIC/Linux+Cluster
+
