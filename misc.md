@@ -57,7 +57,7 @@ Thin client machines to replace PCs (reserved for practicals at the moment).
 
 - You can log in to group machines (seitz1 etc.) and mpusm machines from within the MWN.
 
-- You need to set up a VPN connection to access the MWN from outside: see https://www.lrz.de/services/netz/mobil/vpn.
+- You need to set up a VPN connection to access the MWN from outside: see [https://www.lrz.de/services/netz/mobil/vpn](https://www.lrz.de/services/netz/mobil/vpn).
 
 - The other machines can only be reached from our local network, but this is changing. All PCs on the ground floor and some on the first floor can also be logged in to directly (with a VPN).
 
@@ -69,7 +69,7 @@ Thin client machines to replace PCs (reserved for practicals at the moment).
 
 ## 3. Module command
 
-The module command works by modifying your environment (mostly the PATH and LDLIBRARYPATH variables). There’s a description at https://doku.lrz.de/display/PUBLIC/Environment+Modules.
+The module command works by modifying your environment (mostly the PATH and LDLIBRARYPATH variables). There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modules](https://doku.lrz.de/display/PUBLIC/Environment+Modules).
 
 module availtells you what modules are available.module listtells you which modules you are currently using.module load intelloads the default version of the Intel module.module load intel/17.0loads version 17.0 of the Intel compiler suite.module unload intelunloads the Intel version in use.
 
@@ -79,7 +79,7 @@ module availtells you what modules are available.module listtells you which modu
 
 - Use x2go instead. It will work on any machine with ssh access.
 
-- You can find x2go clients at https://wiki.x2go.org/doku.php/download:start.
+- You can find x2go clients at [https://wiki.x2go.org/doku.php/download:start](https://wiki.x2go.org/doku.php/download:start).
 
 - The clients need to know the machine you want to connect to, your username, and the desktop session type you want to use. Choose XFCE rather than KDE as it uses fewer resources.
 
@@ -111,7 +111,7 @@ module availtells you what modules are available.module listtells you which modu
 
 - Your home directories are accessed by the machines you’re using through a (relatively) slow network connection. In addition, any changes made to files in your home directories will need to be transferred via the network to the LRZ for backup every night. Therefore, your home directory is not the place to do calculations creating large amounts of scratch data or large numbers of files. Use scratch space local to the machine or the project disks for this. You are probably not aware of it, but some of the software some of you are using creates tens of thousands of small files.
 
-- ```/tmp``` is available and local but has limited space, shared with the system. When the disk is full the machine will not work properly, if at all. (Another reason why you may not be able to log in on occasion.)
+- `/tmp` is available and local but has limited space, shared with the system. When the disk is full the machine will not work properly, if at all. (Another reason why you may not be able to log in on occasion.)
 
 ## 6. System support
 
@@ -133,7 +133,7 @@ module availtells you what modules are available.module listtells you which modu
 
 - For the same reason, your web presence (if you have set one up) has no access to your home directories, which is why you need to transfer data to the web directories. These are only available via ltsp01.
 
-- E-mail is not meant to transfer large amounts of data. Use a cloud solution instead (e.g., https://doku.lrz.de/display/PUBLIC/Cloud+Storage).
+- E-mail is not meant to transfer large amounts of data. Use a cloud solution instead (e.g., [https://doku.lrz.de/display/PUBLIC/Cloud+Storage](https://doku.lrz.de/display/PUBLIC/Cloud+Storage)).
 
 ### FYI: e-mail addresses
 
@@ -145,7 +145,7 @@ module availtells you what modules are available.module listtells you which modu
 
 - These different mail addresses have absolutely nothing to do with each other.
 
-- You can forward mail from one to the other. Do this by logging in to horde (https://www.usm.uni-muenchen.de/horde/login.php) and choosing “Mail”, “Filters”.
+- You can forward mail from one to the other. Do this by logging in to horde ([https://www.usm.uni-muenchen.de/horde/login.php](https://www.usm.uni-muenchen.de/horde/login.php)) and choosing “Mail”, “Filters”.
 
 ## 8. Outdated software
 
@@ -175,13 +175,13 @@ module availtells you what modules are available.module listtells you which modu
 
 - Longer-term guests can have a LRZ guest WLAN account. Just get in touch with Keith. You should say who it’s for and how long their stay is (a week is the maximum but this can be extended).
 
-- For a meeting or workshop the LRZ will create an account for all participants. You need to do this reasonably well in advance. See https://doku.lrz.de/display/PUBLIC/Konferenz-WLAN+beantragen.
+- For a meeting or workshop the LRZ will create an account for all participants. You need to do this reasonably well in advance. See [https://doku.lrz.de/display/PUBLIC/Konferenz-WLAN+beantragen](https://doku.lrz.de/display/PUBLIC/Konferenz-WLAN+beantragen).
 
 - The other alternative is that they use a cable but this should only be used if larger amounts of data are being transferred. For this we (Tadziu or Keith) need the hardware address of the Ethernet card. It can be found using the commands
 
-  - under Windows: ```ipconfig /all```
+  - under Windows: `ipconfig /all`
 
-  - under Linux or MacOS: ```ifconfig -a```
+  - under Linux or MacOS: `ifconfig -a`
 
     (or look at the internet connection in the system settings).
 
@@ -193,7 +193,7 @@ module availtells you what modules are available.module listtells you which modu
 
 - Rudi and Keith are also responsible for the network so that any misuse gets reported to them and they will get in touch with you.
 
-- The physics department has licensed software which may be of interest. This includes Mathematica and various Microsoft programs including Office. See https://www.it.physik.uni-muenchen.de/dienste/software/index.html.
+- The physics department has licensed software which may be of interest. This includes Mathematica and various Microsoft programs including Office. See [https://www.it.physik.uni-muenchen.de/dienste/software/index.html](https://www.it.physik.uni-muenchen.de/dienste/software/index.html).
 
 - You can subscribe to the “alle” list in your mail client. Look for “subscribe” and choose usm-bulletin-board (right at the bottom).
 
@@ -205,17 +205,17 @@ If you have an account at the USM you have two passwords, one for logging in and
 
 To change your login password:
 
-- connect to https://umaster.usm.uni-muenchen.de/ with a web browser, log in, click on your name at the top right, and choose “Change password”.
+- connect to [https://umaster.usm.uni-muenchen.de/](https://umaster.usm.uni-muenchen.de/) with a web browser, log in, click on your name at the top right, and choose “Change password”.
 
 To change your email password:
 
-- connect to https://kmaster.usm.lmu.de/ with a web browser, log in, click on your name at the top right, and choose “Change password”.
+- connect to [https://kmaster.usm.lmu.de/](https://kmaster.usm.lmu.de/) with a web browser, log in, click on your name at the top right, and choose “Change password”.
 
 ## Email
 
 Your email address at the USM is username**@usm.uni-muenchen.de** or username**@usm.lmu.de**. Mail sent to either address will arrive in your inbox.
 
-You can read and send email using your favorite IMAP- and SMTP-capable mail program (e.g., Mutt, Pine, Thunderbird, Outlook, Apple Mail) or using one of the email interfaces on our web server (Horde [https://www.usm.uni-muenchen.de/horde/], SquirrelMail [https://www.usm.uni-muenchen.de/webmail/], or Roundcube [https://www.usm.uni-muenchen.de/roundcubemail/]). SquirrelMail and Roundcube have a simpler interface, Horde also supports calendars, to-do lists, etc. For all email interfaces you need to authenticate using your username and email password.
+You can read and send email using your favorite IMAP- and SMTP-capable mail program (e.g., Mutt, Pine, Thunderbird, Outlook, Apple Mail) or using one of the email interfaces on our web server ([Horde](https://www.usm.uni-muenchen.de/horde/), [SquirrelMail](https://www.usm.uni-muenchen.de/webmail/), or [Roundcube](https://www.usm.uni-muenchen.de/roundcubemail/)). SquirrelMail and Roundcube have a simpler interface, Horde also supports calendars, to-do lists, etc. For all email interfaces you need to authenticate using your username and email password.
 
 If you prefer using a dedicated email program, here are the required settings:
 
@@ -238,12 +238,14 @@ To upload a sieve file to the mail server:
 - If the connection succeeds, from within sieve-connect do:
 
 ```
-put sievefile
-activate sievefile
-quit
+  put sievefile
+
+  activate sievefile
+
+  quit
 ```
 
-where ```sievefile``` is the name of your sieve file. 
+where `sievefile` is the name of your sieve file. 
 If your sieve script contains errors it will not be accepted.
 
 The sieve script remains active until you (within sieve-connect) either deactivate or delete it or activate another script. You can also list your uploaded scripts in sieve-connect.
@@ -257,19 +259,19 @@ The wireless network is managed by the LRZ. The simplest way to connect to the w
 - If not: here are the required settings (the LRZ has more detailed instructions, see [https://www.lrz.de/services/netz/wlan/eduroam/](https://www.lrz.de/services/netz/wlan/eduroam/)):
 
 ```
-        Network name (SSID): eduroam.
+  Network name (SSID): eduroam.
 
-        Security protocol: WPA2 Enterprise.
+  Security protocol: WPA2 Enterprise.
 
-        Authentication protocol: TTLS, configured with:
+  Authentication protocol: TTLS, configured with:
 
-        Outer identity (anonymous identity): anonymous@mwn.de.
+  Outer identity (anonymous identity): anonymous@mwn.de.
 
-        Phase 2 authentication (TTLS inner authentication): PAP.
+  Phase 2 authentication (TTLS inner authentication): PAP.
 
-        Identity (user name): username**@usm** (this is not an email address but a user name with an appended RADIUS authentication realm).
+  Identity (user name): username**@usm** (this is not an email address but a user name with an appended RADIUS authentication realm).
 
-        Password: your email password.
+  Password: your email password.
 ```
 
 - Your operating system may ask/require you to accept/install a corresponding server certificate.
@@ -292,7 +294,7 @@ In all cases the MAC address will look something like nn**-nn-nn-nn-nn-nn or nn:
 
 ## Mailing lists
 
-There are a number of institute-related mailing lists which may be of interest to you, such as alle for general USM-related topics or students for subjects of interest to Master’s and PhD students and post-docs. Publicly visible mailing lists, for example those created for the participants of a particular teaching course, are advertised on our mailman page (https://www.usm.uni-muenchen.de/mailman/). Consult your supervisor and/or colleagues regarding further mailing lists relevant to your work.
+There are a number of institute-related mailing lists which may be of interest to you, such as alle for general USM-related topics or students for subjects of interest to Master’s and PhD students and post-docs. Publicly visible mailing lists, for example those created for the participants of a particular teaching course, are advertised on our mailman page ([https://www.usm.uni-muenchen.de/mailman/](https://www.usm.uni-muenchen.de/mailman/)). Consult your supervisor and/or colleagues regarding further mailing lists relevant to your work.
 
 - To subscribe to a list, send a mail to listname**-join@usm.uni-muenchen.de**, where listname is the name of the list. (The subject and body of the message will be ignored, so you may leave them empty.)
 
@@ -300,7 +302,7 @@ There are a number of institute-related mailing lists which may be of interest t
 
 ## Journal access
 
-Journals for which the LMU has a subscription can be accessed from your laptop, if you have a VPN connection to the MWN (seehttps://www.lrz.de/services/netz/mobil/vpn/) and the correct proxy settings for your browser. The LRZ has an automatic proxy configuration script at**http://pac.lrz.de/. To set this in Pale Moon,for example, go to Preferences → Advanced → Network → Connection Settings, and then chooseAutomatic proxy configuration URL**and enter the above address.
+Journals for which the LMU has a subscription can be accessed from your laptop, if you have a VPN connection to the MWN (see [https://www.lrz.de/services/netz/mobil/vpn/](https://www.lrz.de/services/netz/mobil/vpn/)) and the correct proxy settings for your browser. The LRZ has an automatic proxy configuration script at [http://pac.lrz.de/](http://pac.lrz.de/). To set this in Pale Moon,for example, go to Preferences → Advanced → Network → Connection Settings, and then choose Automatic proxy configuration URL and enter the above address.
 
 ## Using X remotely
 
@@ -310,7 +312,7 @@ You can also use X directly if you have a local X server running (check that you
 
 ## Printing
 
-The recommended way to print on the USM printers from your laptop is via the USM CUPS server. (See the instructions on adding a printer for → Linux, → macOS, and → Windows.) To get a list of available printers, go to http://cups.usm.uni-muenchen.de:631/printers/. On the USM Linux machines, you can also use the command lpstat −a to list all printers and their current status. Most of the printers also have an adhesive label indicating the printer’s name.
+The recommended way to print on the USM printers from your laptop is via the USM CUPS server. (See the instructions on adding a printer for → Linux, → macOS, and → Windows.) To get a list of available printers, go to [http://cups.usm.uni-muenchen.de:631/printers/](http://cups.usm.uni-muenchen.de:631/printers/). On the USM Linux machines, you can also use the command lpstat −a to list all printers and their current status. Most of the printers also have an adhesive label indicating the printer’s name.
 
 On the Linux machines, you can print from the shell command line using the command
 
