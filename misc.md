@@ -53,7 +53,13 @@ Thin client machines to replace PCs (reserved for practicals at the moment).
 
   (This is not enforced at the moment but can be if necessary.)
 
-- You can log in to ltsp01 from anywhere using ssh:ssh -Y -l username ltsp01.usm.uni-muenchen.deorssh -Y username@ltsp01.usm.uni-muenchen.de
+- You can log in to `ltsp01` from anywhere using ssh:
+
+  ```ssh -Y -l username ltsp01.usm.uni-muenchen.de```
+
+  or:
+
+  ```ssh -Y username@ltsp01.usm.uni-muenchen.de```
 
 - You can log in to group machines (seitz1 etc.) and mpusm machines from within the MWN.
 
