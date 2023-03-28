@@ -5,9 +5,9 @@ date: 2023-03-28
 
 This document contains information primarily on the computing systems hosted at USM. For information on the computing services provided by LMU Physik or by LRZ see their respective web pages:
 
-    https://www.it.physik.uni-muenchen.de
+- [https://www.it.physik.uni-muenchen.de](https://www.it.physik.uni-muenchen.de)
 
-    https://www.lrz.de
+- [https://www.lrz.de](https://www.lrz.de)
 
 # USM computer systems organization
 
@@ -189,13 +189,13 @@ module availtells you what modules are available.module listtells you which modu
 
 ## 10. Miscellaneous
 
-    If you need more computing power it is possible to use the Linux system at the LRZ. Get in touch with your LRZ master user (Keith).
+- If you need more computing power it is possible to use the Linux system at the LRZ. Get in touch with your LRZ master user (Keith).
 
-    Rudi and Keith are also responsible for the network so that any misuse gets reported to them and they will get in touch with you.
+- Rudi and Keith are also responsible for the network so that any misuse gets reported to them and they will get in touch with you.
 
-    The physics department has licensed software which may be of interest. This includes Mathematica and various Microsoft programs including Office. See https://www.it.physik.uni-muenchen.de/dienste/software/index.html.
+- The physics department has licensed software which may be of interest. This includes Mathematica and various Microsoft programs including Office. See https://www.it.physik.uni-muenchen.de/dienste/software/index.html.
 
-    You can subscribe to the “alle” list in your mail client. Look for “subscribe” and choose usm-bulletin-board (right at the bottom).
+- You can subscribe to the “alle” list in your mail client. Look for “subscribe” and choose usm-bulletin-board (right at the bottom).
 
 # Information for computer users at the USM
 
@@ -205,11 +205,11 @@ If you have an account at the USM you have two passwords, one for logging in and
 
 To change your login password:
 
-    connect to https://umaster.usm.uni-muenchen.de/ with a web browser, log in, click on your name at the top right, and choose “Change password”.
+- connect to https://umaster.usm.uni-muenchen.de/ with a web browser, log in, click on your name at the top right, and choose “Change password”.
 
 To change your email password:
 
-    connect to https://kmaster.usm.lmu.de/ with a web browser, log in, click on your name at the top right, and choose “Change password”.
+- connect to https://kmaster.usm.lmu.de/ with a web browser, log in, click on your name at the top right, and choose “Change password”.
 
 ## Email
 
@@ -236,11 +236,13 @@ To upload a sieve file to the mail server:
 - On one of the Linux machines change into the directory where your sieve file is located and execute sieve-connect mailget.usm.uni-muenchen.de, which should ask you for your (email) password.
 
 - If the connection succeeds, from within sieve-connect do:
+
 ```
 put sievefile
 activate sievefile
 quit
 ```
+
 where ```sievefile``` is the name of your sieve file. 
 If your sieve script contains errors it will not be accepted.
 
@@ -252,7 +254,7 @@ The wireless network is managed by the LRZ. The simplest way to connect to the w
 
 - If your home institute participates in eduroam and you have already set it up there, then it should work here as well without further changes.
 
-- If not: here are the required settings (the LRZ has more detailed instructions, see https://www.lrz.de/services/netz/wlan/eduroam/):
+- If not: here are the required settings (the LRZ has more detailed instructions, see [https://www.lrz.de/services/netz/wlan/eduroam/](https://www.lrz.de/services/netz/wlan/eduroam/)):
 
 ```
         Network name (SSID): eduroam.
@@ -292,9 +294,9 @@ In all cases the MAC address will look something like nn**-nn-nn-nn-nn-nn or nn:
 
 There are a number of institute-related mailing lists which may be of interest to you, such as alle for general USM-related topics or students for subjects of interest to Master’s and PhD students and post-docs. Publicly visible mailing lists, for example those created for the participants of a particular teaching course, are advertised on our mailman page (https://www.usm.uni-muenchen.de/mailman/). Consult your supervisor and/or colleagues regarding further mailing lists relevant to your work.
 
-    To subscribe to a list, send a mail to listname**-join@usm.uni-muenchen.de**, where listname is the name of the list. (The subject and body of the message will be ignored, so you may leave them empty.)
+- To subscribe to a list, send a mail to listname**-join@usm.uni-muenchen.de**, where listname is the name of the list. (The subject and body of the message will be ignored, so you may leave them empty.)
 
-    To unsubscribe from a list, send a mail to listname**-leave@usm.uni-muenchen.de**. Send this mail using the same email account with which you are subscribed to the list.
+- To unsubscribe from a list, send a mail to listname**-leave@usm.uni-muenchen.de**. Send this mail using the same email account with which you are subscribed to the list.
 
 ## Journal access
 
