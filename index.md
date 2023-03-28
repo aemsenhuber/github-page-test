@@ -11,7 +11,7 @@ errc1
 ---
 properties:
   > Intel Xeon CPU E7-4850 v2 @ 2.30GHz
-  <img style="float: right;" src="/github-page-test/docs/assets/images/intel-xeon-e7.jpg">
+  <img style="float: right;" alt="Intel Xeon E7-4850" width="300" src="/github-page-test/docs/assets/images/intel-xeon-e7.jpg">
   
   > Cache: 24 MB L3, Memory: 676 GB
    
