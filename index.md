@@ -9,38 +9,50 @@ Local resources
 
 errc1
 ---
+
 properties:
-  > Intel Xeon CPU E7-4850 v2 @ 2.30GHz
+
+  - Intel Xeon CPU E7-4850 v2 @ 2.30GHz
   <img style="float: right;" alt="Intel Xeon E7-4850" width="300" src="/github-page-test/docs/assets/images/intel-xeon-e7.jpg">
   
-  > Cache: 24 MB L3, Memory: 676 GB
+  - Cache: 24 MB L3, Memory: 676 GB
    
-  > 12 cores, 96 virtual cores with HT
+  - 12 cores, 96 virtual cores with HT
 
 accessible via:
-  > ssh from ltsp01 (aka moon): user@errc1.usm.uni-muenchen.de
 
-  > [jupyter-notebook](https://errc1.usm.uni-muenchen.de:9999)
+  - ssh from ltsp01 (aka moon): 
+    ```user@errc1.usm.uni-muenchen.de```
 
-  > storage: 30 TB on "/e/arch/" (backed-up daily), 1.1 TB on "/scratch/"
+  - [jupyter-notebook](https://errc1.usm.uni-muenchen.de:9999)
+
+  - storage:
+ 
+    - 30 TB on ```/e/arch/``` (backed-up daily)
+
+    - 1.1 TB on ```/scratch/```
 
 ercol1
 ---
+
 properties:
 
 CPUs:
-  > Intel Xeon Gold 6138 CPU @ 2.00GHz
 
-  > Cache: 27.5 MB L3, Memory: 1 TB
+  - Intel Xeon Gold 6138 CPU @ 2.00GHz
 
-  > 20 cores, 160 virtual cores with HT
+  - Cache: 27.5 MB L3, Memory: 1 TB
+
+  - 20 cores, 160 virtual cores with HT
 
 GPU:
-  > Nvidia Tesla V100S
+
+  - Nvidia Tesla V100S
  
 accessible via:
-  > ssh from ltsp01 (aka moon): 
-    user@ercol1.usm.uni-muenchen.de
+
+  - ssh from ltsp01 (aka moon): 
+    ```user@ercol1.usm.uni-muenchen.de```
 
 
 Remote resources
