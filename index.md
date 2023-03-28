@@ -1,10 +1,11 @@
 ---
-title: Wiki Computational resources Barbara's group
+title: Wiki Barbara's group
 date: 2023-03-28
 ---
 
 Local resources
 ---
+
 
 errc1
 ---
@@ -32,3 +33,30 @@ accessible via:
   > ssh from ltsp01 (aka moon): 
     user@ercol1.usm.uni-muenchen.de
 
+
+Remote resources
+------
+
+usm
+---
+properties:
+   > 
+
+accesible via:
+   > 
+
+c2pap
+---
+properties:
+   > 
+
+accesible via:
+   > 
+
+linux-cluster
+---
+properties:
+   > 
+
+accesible via:
+   > 
