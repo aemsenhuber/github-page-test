@@ -20,7 +20,7 @@ properties:
 - GPU:
 
   - Nvidia Tesla V100S
-  <img style="float: right;" alt="Nvidia Tesla V100S" width="300" src="/github-page-test/docs/assets/images/nvidia-tesla-v100s.jpg">
+  <img style="float: right;" alt="Nvidia Tesla V100S" width="200" src="/github-page-test/docs/assets/images/nvidia-tesla-v100s.jpg">
 
 accessible via:
 
