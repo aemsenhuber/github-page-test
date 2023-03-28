@@ -29,6 +29,12 @@ accessible via:
 
   - you need to be part of the user group ```video``` to access the graphic card ([ask Tadziu](mailto:hoffmann@usm.uni-muenchen.de))
 
+storage:
+
+  - 12 TB on ```/e/ocean1```
+
+  - 2 TB on ```/e/scratch```
+
 local support:
 
   - channel #ercol1 on Slack
