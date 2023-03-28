@@ -27,5 +27,5 @@ accessible via:
   - ssh via ```ltsp01``` (aka moon):
     ```user@ercol1.usm.uni-muenchen.de```
 
-  - you need to be part of the user group ```video``` needed to access the graphic card (ask Tadziu)
+  - you need to be part of the user group ```video``` to access the graphic card (ask [Tadziu](hoffmann@usm.uni-muenchen.de))
 
