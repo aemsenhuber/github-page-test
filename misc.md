@@ -3,93 +3,9 @@ title: miscellaneous
 date: 2023-03-28
 ---
 
-This document contains information primarily on the computing systems hosted at USM. For information on the computing services provided by LMU Physik or by LRZ see their respective web pages:
-
-- [https://www.it.physik.uni-muenchen.de](https://www.it.physik.uni-muenchen.de)
-
-- [https://www.lrz.de](https://www.lrz.de)
-
 # USM computer systems organization
 
-## 1.  Computer systems
-
-### Servers
-
-There are lots of these. They are not available for users.
-
-dorc1–4 and cast1–2
-
-CAST group machines and associated disks.
-
-seitz1–2, werc1–2
-
-Stella’s group machines and disks (werc also Jochen).
-
-weller1–2
-
-Jochen’s group and disks.
-
-gustl, birnst1
-
-Til’s group and disks.
-
-errc1, ercol1
-
-Barbara’s group and disks.
-
-ltsp01–03, mpusm01–11
-
-Open to everyone (mpusm02 reserved for Jo, Keith, Thomas, etc.).
-
-ltsp04–19
-
-Thin client machines to replace PCs (reserved for practicals at the moment).
-
-## 2. Users
-
-- Any of the machines can be used by anyone with a valid USM account with an up-to-date password.
-
-- BUT machines are reserved for the intended groups. You can use other group machines if and only if given permission by the various group leaders. Do not use the thin client machines unless you’re using a thin client.
-
-  (This is not enforced at the moment but can be if necessary.)
-
-- You can log in to `ltsp01` from anywhere using ssh:
-
-  ```ssh -Y -l username ltsp01.usm.uni-muenchen.de```
-
-  or:
-
-  ```ssh -Y username@ltsp01.usm.uni-muenchen.de```
-
-- You can log in to group machines (seitz1 etc.) and mpusm machines from within the MWN.
-
-- You need to set up a VPN connection to access the MWN from outside: see [https://www.lrz.de/services/netz/mobil/vpn](https://www.lrz.de/services/netz/mobil/vpn).
-
-- The other machines can only be reached from our local network, but this is changing. All PCs on the ground floor and some on the first floor can also be logged in to directly (with a VPN).
-
-- If you mistype your password three times in a row then you will be blocked for 10 minutes, so just wait and then try again. This is a security measure and will change for the machines behind the LRZ firewall (those you can reach using VPN).
-
-- Problems with the servers can mean either your username is not known or, more often, your home directory isn’t available. The latter is normally not a problem with the home directories themselves but with the system. When you try to log in to a machine, the machine asks our servers if your username is known and checks your password (using kerberos, look it up). If the answer to both is yes then you can log in BUT ssh and window manager (e.g., KDE, XFCE) try to store/read data on your home directory (look at .ssh, .config, .cache, .local) and if your home directory is not there or is full then you still won’t be able to log in.
-
-- A serious DNS attack for instance can mean that ltsp01 and so on are not able to look up your information and you will be blocked. (It’s a bit more complicated as ltsp01 etc. cache much of the information to speed things up so you may possibly be lucky and be able to log in anyway.)
-
-## 3. Module command
-
-The module command works by modifying your environment (mostly the PATH and LDLIBRARYPATH variables). 
-
-There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modules](https://doku.lrz.de/display/PUBLIC/Environment+Modules).
-
-`module avail` tells you what modules are available.
-
-`module list` tells you which modules you are currently using.
-
-`module load intel` loads the default version of the Intel module.
-
-`module load intel/17.0` loads version 17.0 of the Intel compiler suite.
-
-`module unload intel` unloads the Intel version in use.
-
-## 4. x2go
+## x2go
 
 - X is slow remotely (and if your internet connection is interrupted, your session will be killed).
 
@@ -107,7 +23,7 @@ There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modul
 
 - Tadziu or Keith need to install/start an x2go server on the target machine. If you can ssh to a machine but not use x2go the server probably isn’t running. Please contact us in this case.
 
-## 5. Queuing, scratch, and backup
+## Queuing, scratch, and backup
 
 - In general there is no queuing. On the whole people behave reasonably and a “gentle” hint has usually sufficed.
 
@@ -129,7 +45,7 @@ There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modul
 
 - `/tmp` is available and local but has limited space, shared with the system. When the disk is full the machine will not work properly, if at all. (Another reason why you may not be able to log in on occasion.)
 
-## 6. System support
+## System support
 
 - Generally, contact Tadziu or Keith if you have system requests or there are problems with the system. If it’s something that Rudi needs to deal with it will be passed on.
 
@@ -139,7 +55,7 @@ There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modul
 
 - Use zypper se "package" to find out if SUSE supplies a package of interest. If they do just ask Keith or Tadziu to install it.
 
-## 7. E-mail and file sharing
+## E-mail and file sharing
 
 - Your e-mail and login accounts are completely separate even though the username is the same for both.
 
@@ -163,7 +79,7 @@ There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modul
 
 - You can forward mail from one to the other. Do this by logging in to horde ([https://www.usm.uni-muenchen.de/horde/login.php](https://www.usm.uni-muenchen.de/horde/login.php)) and choosing “Mail”, “Filters”.
 
-## 8. Outdated software
+## Outdated software
 
 - Installing software or updating outdated software is easy if SUSE provides an update. If not then it will depend.
 
@@ -185,7 +101,7 @@ There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modul
 
 - Bear in mind: we have of order 100 registered users, of order 100 machines (including PCs) and SUSE has 30000–40000 packages in all. There’s no way that 3 people can cater for every need.
 
-## 9. Guests
+## Guests
 
 - Short-term guests who want to make light use of the Internet should just use Bayern-WLAN which only requires agreeing to the terms and conditions. It is also available throughout the City.
 
@@ -203,7 +119,7 @@ There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modul
 
 - If they have an ultra-thin laptop with an external Ethernet adapter then plug it in and give us its hardware address (it’s the one that appears after the device is plugged in).
 
-## 10. Miscellaneous
+## Miscellaneous
 
 - If you need more computing power it is possible to use the Linux system at the LRZ. Get in touch with your LRZ master user (Keith).
 

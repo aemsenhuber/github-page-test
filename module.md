@@ -3,20 +3,22 @@ title: modules
 date: 2023-03-28
 ---
 
-modules
----
+The module command works by modifying your environment (mostly the PATH and LDLIBRARYPATH variables).
 
-As for many clusters, get available modules by typing
+There’s a description at [https://doku.lrz.de/display/PUBLIC/Environment+Modules](https://doku.lrz.de/display/PUBLIC/Environment+Modules).
 
-```module avail```
+- `module avail` tells you what modules are available.
 
-To load modules
+- `module list` tells you which modules you are currently using.
 
-```module load name```
+- `module load intel` loads the default version of the Intel module.
 
-where ```name``` is the module name, e.g.
+- `module load intel/17.0` loads version 17.0 of the Intel compiler suite.
 
-```module load intel/19.0```
+- `module unload intel` unloads the Intel version in use.
+
+
+## Example 
 
 To set persistent module loading when login, add to ~/.profile something like this
 
