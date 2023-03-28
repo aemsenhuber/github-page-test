@@ -3,54 +3,6 @@ title: miscellaneous
 date: 2023-03-28
 ---
 
-Useful generic commands are:
-
-To have the list of all the cpus load
-
-```htop```
-
-For a less graphical overview which combines Multicore programs into one CPU usage number (100% per fully used logical core), use
-
-```top -c```
-
-This can also be used to give a (mostly) accurate overview of swap usage by pressing “f” to enter the options menu and then selecting (space) and sorting by (“s”) SWAP.
-
-To timeout a program after e.g. 60 seconds
-
-```timeout 60 ./executable```
-
-EMACS
----
-
-Some good emacs modifications (add at the end of ~/.emacs file)
-
-```
-;;window header with file name
-
-(setq frame-title-format "%b")
-```
-
-```
-;;mark trailing spaces and tabs in red
-
-(setq-default show-trailing-whitespace t)
-```
-
-```
-;;set font size
-
-(set-face-attribute 'default nil :height 120)
-```
-
-```
-;; dark background, light font color
-
-(add-to-list 'default-frame-alist '(foreground-color . "#E0DFDB"))
-
-(add-to-list 'default-frame-alist '(background-color . "#2e3436"))
-```
-
-
 This document contains information primarily on the computing systems hosted at USM. For information on the computing services provided by LMU Physik or by LRZ see their respective web pages:
 
     https://www.it.physik.uni-muenchen.de
@@ -61,7 +13,7 @@ This document contains information primarily on the computing systems hosted at 
 
 ## 1.  Computer systems
 
-##Servers
+### Servers
 
 There are lots of these. They are not available for users.
 
@@ -95,25 +47,25 @@ Thin client machines to replace PCs (reserved for practicals at the moment).
 
 ## 2. Users
 
-    Any of the machines can be used by anyone with a valid USM account with an up-to-date password.
+- Any of the machines can be used by anyone with a valid USM account with an up-to-date password.
 
-    BUT machines are reserved for the intended groups. You can use other group machines if and only if given permission by the various group leaders. Do not use the thin client machines unless you’re using a thin client.
+- BUT machines are reserved for the intended groups. You can use other group machines if and only if given permission by the various group leaders. Do not use the thin client machines unless you’re using a thin client.
 
-    (This is not enforced at the moment but can be if necessary.)
+  (This is not enforced at the moment but can be if necessary.)
 
-    You can log in to ltsp01 from anywhere using ssh:ssh -Y -l username ltsp01.usm.uni-muenchen.deorssh -Y username@ltsp01.usm.uni-muenchen.de
+- You can log in to ltsp01 from anywhere using ssh:ssh -Y -l username ltsp01.usm.uni-muenchen.deorssh -Y username@ltsp01.usm.uni-muenchen.de
 
-    You can log in to group machines (seitz1 etc.) and mpusm machines from within the MWN.
+- You can log in to group machines (seitz1 etc.) and mpusm machines from within the MWN.
 
-    You need to set up a VPN connection to access the MWN from outside: see https://www.lrz.de/services/netz/mobil/vpn.
+- You need to set up a VPN connection to access the MWN from outside: see https://www.lrz.de/services/netz/mobil/vpn.
 
-    The other machines can only be reached from our local network, but this is changing. All PCs on the ground floor and some on the first floor can also be logged in to directly (with a VPN).
+- The other machines can only be reached from our local network, but this is changing. All PCs on the ground floor and some on the first floor can also be logged in to directly (with a VPN).
 
-    If you mistype your password three times in a row then you will be blocked for 10 minutes, so just wait and then try again. This is a security measure and will change for the machines behind the LRZ firewall (those you can reach using VPN).
+- If you mistype your password three times in a row then you will be blocked for 10 minutes, so just wait and then try again. This is a security measure and will change for the machines behind the LRZ firewall (those you can reach using VPN).
 
-    Problems with the servers can mean either your username is not known or, more often, your home directory isn’t available. The latter is normally not a problem with the home directories themselves but with the system. When you try to log in to a machine, the machine asks our servers if your username is known and checks your password (using kerberos, look it up). If the answer to both is yes then you can log in BUT ssh and window manager (e.g., KDE, XFCE) try to store/read data on your home directory (look at .ssh, .config, .cache, .local) and if your home directory is not there or is full then you still won’t be able to log in.
+- Problems with the servers can mean either your username is not known or, more often, your home directory isn’t available. The latter is normally not a problem with the home directories themselves but with the system. When you try to log in to a machine, the machine asks our servers if your username is known and checks your password (using kerberos, look it up). If the answer to both is yes then you can log in BUT ssh and window manager (e.g., KDE, XFCE) try to store/read data on your home directory (look at .ssh, .config, .cache, .local) and if your home directory is not there or is full then you still won’t be able to log in.
 
-    A serious DNS attack for instance can mean that ltsp01 and so on are not able to look up your information and you will be blocked. (It’s a bit more complicated as ltsp01 etc. cache much of the information to speed things up so you may possibly be lucky and be able to log in anyway.)
+- A serious DNS attack for instance can mean that ltsp01 and so on are not able to look up your information and you will be blocked. (It’s a bit more complicated as ltsp01 etc. cache much of the information to speed things up so you may possibly be lucky and be able to log in anyway.)
 
 ## 3. Module command
 
@@ -123,118 +75,117 @@ module availtells you what modules are available.module listtells you which modu
 
 ## 4. x2go
 
-    X is slow remotely (and if your internet connection is interrupted, your session will be killed).
+- X is slow remotely (and if your internet connection is interrupted, your session will be killed).
 
-    Use x2go instead. It will work on any machine with ssh access.
+- Use x2go instead. It will work on any machine with ssh access.
 
-    You can find x2go clients at https://wiki.x2go.org/doku.php/download:start.
+- You can find x2go clients at https://wiki.x2go.org/doku.php/download:start.
 
-    The clients need to know the machine you want to connect to, your username, and the desktop session type you want to use. Choose XFCE rather than KDE as it uses fewer resources.
+- The clients need to know the machine you want to connect to, your username, and the desktop session type you want to use. Choose XFCE rather than KDE as it uses fewer resources.
 
-    Disable sound as well.
+- Disable sound as well.
 
-    If you choose “Desktop Sharing” or “Connection to local desktop” you can connect to an existing X session and work with others (this is buggy and can give font and other problems).
+- If you choose “Desktop Sharing” or “Connection to local desktop” you can connect to an existing X session and work with others (this is buggy and can give font and other problems).
 
-    The session remains active until you log out on the remote machine. Just capping the connection doesn’t stop the session. (This allows you to resume a session if your internet connection suddenly dies but can be restarted.)
+- The session remains active until you log out on the remote machine. Just capping the connection doesn’t stop the session. (This allows you to resume a session if your internet connection suddenly dies but can be restarted.)
 
-    Tadziu or Keith need to install/start an x2go server on the target machine. If you can ssh to a machine but not use x2go the server probably isn’t running. Please contact us in this case.
+- Tadziu or Keith need to install/start an x2go server on the target machine. If you can ssh to a machine but not use x2go the server probably isn’t running. Please contact us in this case.
 
 ## 5. Queuing, scratch, and backup
 
-    In general there is no queuing. On the whole people behave reasonably and a “gentle” hint has usually sufficed.
+- In general there is no queuing. On the whole people behave reasonably and a “gentle” hint has usually sufficed.
 
-    The CAST group machines do have queueing. It is a system called torque which is based on the older PBS system. You submit (qsub) a script including comments specifying your requirements. For more information ask your supervisor or a friend.
+- The CAST group machines do have queueing. It is a system called torque which is based on the older PBS system. You submit (qsub) a script including comments specifying your requirements. For more information ask your supervisor or a friend.
 
-    All machines have some scratch space which is limited to the machine in question. There are also project disks belonging to the various groups.
+- All machines have some scratch space which is limited to the machine in question. There are also project disks belonging to the various groups.
 
-    If you need scratch space or access to the project disks then ask Keith or Tadziu to create a directory for you. You need to tell us which machines you are using as scratch is normally local to a single machine.
+- If you need scratch space or access to the project disks then ask Keith or Tadziu to create a directory for you. You need to tell us which machines you are using as scratch is normally local to a single machine.
 
-    Backups are made of system relevant disks. In particular, /home/moon (your home directories) are backed up incrementally every night.
+- Backups are made of system relevant disks. In particular, /home/moon (your home directories) are backed up incrementally every night.
 
-    Scratch disks are not backed up.
+- Scratch disks are not backed up.
 
-    Desktop machines are only backed up if a user’s home directory is on the machine, incrementally every night.
+- Desktop machines are only backed up if a user’s home directory is on the machine, incrementally every night.
 
-    Your home directories are backed up, so any important software, programs, thesis, etc. should be placed there. And for really important stuff you should have your own backups.
+- Your home directories are backed up, so any important software, programs, thesis, etc. should be placed there. And for really important stuff you should have your own backups.
 
-    Your home directories are accessed by the machines you’re using through a (relatively) slow network connection. In addition, any changes made to files in your home directories will need to be transferred via the network to the LRZ for backup every night. Therefore, your home directory is not the place to do calculations creating large amounts of scratch data or large numbers of files. Use scratch space local to the machine or the project disks for this. You are probably not aware of it, but some of the software some of you are using creates tens of thousands of small files.
+- Your home directories are accessed by the machines you’re using through a (relatively) slow network connection. In addition, any changes made to files in your home directories will need to be transferred via the network to the LRZ for backup every night. Therefore, your home directory is not the place to do calculations creating large amounts of scratch data or large numbers of files. Use scratch space local to the machine or the project disks for this. You are probably not aware of it, but some of the software some of you are using creates tens of thousands of small files.
 
-    /tmp is available and local but has limited space, shared with the system. When the disk is full the machine will not work properly, if at all. (Another reason why you may not be able to log in on occasion.)
+- ```/tmp``` is available and local but has limited space, shared with the system. When the disk is full the machine will not work properly, if at all. (Another reason why you may not be able to log in on occasion.)
 
 ## 6. System support
 
-    Generally, contact Tadziu or Keith if you have system requests or there are problems with the system. If it’s something that Rudi needs to deal with it will be passed on.
+- Generally, contact Tadziu or Keith if you have system requests or there are problems with the system. If it’s something that Rudi needs to deal with it will be passed on.
 
-    Software/system upgrades: we are obliged to keep the systems up to date as regards security updates. Unfortunately these mostly require a restart so we try to keep these to a minimum.
+- Software/system upgrades: we are obliged to keep the systems up to date as regards security updates. Unfortunately these mostly require a restart so we try to keep these to a minimum.
 
-    All the user machines use the openSUSE distribution and should have the same software installed as far as possible. Anything else would be impossible to maintain.
+- All the user machines use the openSUSE distribution and should have the same software installed as far as possible. Anything else would be impossible to maintain.
 
-    Use zypper se "package" to find out if SUSE supplies a package of interest. If they do just ask Keith or Tadziu to install it.
+- Use zypper se "package" to find out if SUSE supplies a package of interest. If they do just ask Keith or Tadziu to install it.
 
 ## 7. E-mail and file sharing
 
-    Your e-mail and login accounts are completely separate even though the username is the same for both.
+- Your e-mail and login accounts are completely separate even though the username is the same for both.
 
-    This is for security reasons. Your e-mail password may be passed in clear over the network and read by an intruder.
+- This is for security reasons. Your e-mail password may be passed in clear over the network and read by an intruder.
 
-    Email and login passwords should never be the same.
+- Email and login passwords should never be the same.
 
-    For the same reason, your web presence (if you have set one up) has no access to your home directories, which is why you need to transfer data to the web directories. These are only available via ltsp01.
+- For the same reason, your web presence (if you have set one up) has no access to your home directories, which is why you need to transfer data to the web directories. These are only available via ltsp01.
 
-    E-mail is not meant to transfer large amounts of data. Use a cloud solution instead (e.g., https://doku.lrz.de/display/PUBLIC/Cloud+Storage).
+- E-mail is not meant to transfer large amounts of data. Use a cloud solution instead (e.g., https://doku.lrz.de/display/PUBLIC/Cloud+Storage).
 
-#
-FYI: e-mail addresses
+### FYI: e-mail addresses
 
-    Every employee/student of the LMU has a lmu.de e-mail address. These are administered by the LMU IT department.
+- Every employee/student of the LMU has a lmu.de e-mail address. These are administered by the LMU IT department.
 
-    Physics students and employees have a physik.uni-muenchen.de e-mail address. These are administered by the Physics faculty IT department.
+- Physics students and employees have a physik.uni-muenchen.de e-mail address. These are administered by the Physics faculty IT department.
 
-    If you are working at the USM then you will usually have a usm.lmu.de / usm.uni-muenchen.de e-mail account. These are administered by us.
+- If you are working at the USM then you will usually have a usm.lmu.de / usm.uni-muenchen.de e-mail account. These are administered by us.
 
-    These different mail addresses have absolutely nothing to do with each other.
+- These different mail addresses have absolutely nothing to do with each other.
 
-    You can forward mail from one to the other. Do this by logging in to horde (https://www.usm.uni-muenchen.de/horde/login.php) and choosing “Mail”, “Filters”.
+- You can forward mail from one to the other. Do this by logging in to horde (https://www.usm.uni-muenchen.de/horde/login.php) and choosing “Mail”, “Filters”.
 
 ## 8. Outdated software
 
-    Installing software or updating outdated software is easy if SUSE provides an update. If not then it will depend.
+- Installing software or updating outdated software is easy if SUSE provides an update. If not then it will depend.
 
-    For things like the Intel compilers etc., we try to keep them compatible with the situation at the LRZ.
+- For things like the Intel compilers etc., we try to keep them compatible with the situation at the LRZ.
 
-    Other packages of general interest (things on /opt or /usr/local) are maintained by us, e.g., IDL, IRAF, . . .
+- Other packages of general interest (things on /opt or /usr/local) are maintained by us, e.g., IDL, IRAF, . . .
 
-    For programs which interest only 1 person he/she should do it themselves. Note that this isn’t generally hard but distributions like SUSE have chosen to separate out header files into packages which aren’t installed by default. This is actually idiotic as it stops you from compiling your programs without our help. Get in touch with Tadziu or Keith if you can’t compile your program due to missing files.
+- For programs which interest only 1 person he/she should do it themselves. Note that this isn’t generally hard but distributions like SUSE have chosen to separate out header files into packages which aren’t installed by default. This is actually idiotic as it stops you from compiling your programs without our help. Get in touch with Tadziu or Keith if you can’t compile your program due to missing files.
 
-    Otherwise you can ask. It will help your case if other people are interested.
+- Otherwise you can ask. It will help your case if other people are interested.
 
-    Note that things like Python and Ruby are used by the system itself. They can’t be changed system-wide without there being a system upgrade. The same goes for glibc.
+- Note that things like Python and Ruby are used by the system itself. They can’t be changed system-wide without there being a system upgrade. The same goes for glibc.
 
-    We have tried to install more up-to-date versions of software in the past but this has caused more problems than are solved. Other things had a nasty habit of not working any more and when SUSE catches up/overtakes there are inconsistencies with libraries/header files etc.
+- We have tried to install more up-to-date versions of software in the past but this has caused more problems than are solved. Other things had a nasty habit of not working any more and when SUSE catches up/overtakes there are inconsistencies with libraries/header files etc.
 
-    The same is true to some extent for packages from “packman”.
+- The same is true to some extent for packages from “packman”.
 
-    This means that it’s better for some packages to be installed by the user.
+- This means that it’s better for some packages to be installed by the user.
 
-    Bear in mind: we have of order 100 registered users, of order 100 machines (including PCs) and SUSE has 30000–40000 packages in all. There’s no way that 3 people can cater for every need.
+- Bear in mind: we have of order 100 registered users, of order 100 machines (including PCs) and SUSE has 30000–40000 packages in all. There’s no way that 3 people can cater for every need.
 
 ## 9. Guests
 
-    Short-term guests who want to make light use of the Internet should just use Bayern-WLAN which only requires agreeing to the terms and conditions. It is also available throughout the City.
+- Short-term guests who want to make light use of the Internet should just use Bayern-WLAN which only requires agreeing to the terms and conditions. It is also available throughout the City.
 
-    Longer-term guests can have a LRZ guest WLAN account. Just get in touch with Keith. You should say who it’s for and how long their stay is (a week is the maximum but this can be extended).
+- Longer-term guests can have a LRZ guest WLAN account. Just get in touch with Keith. You should say who it’s for and how long their stay is (a week is the maximum but this can be extended).
 
-    For a meeting or workshop the LRZ will create an account for all participants. You need to do this reasonably well in advance. See https://doku.lrz.de/display/PUBLIC/Konferenz-WLAN+beantragen.
+- For a meeting or workshop the LRZ will create an account for all participants. You need to do this reasonably well in advance. See https://doku.lrz.de/display/PUBLIC/Konferenz-WLAN+beantragen.
 
-    The other alternative is that they use a cable but this should only be used if larger amounts of data are being transferred. For this we (Tadziu or Keith) need the hardware address of the Ethernet card. It can be found using the commands
+- The other alternative is that they use a cable but this should only be used if larger amounts of data are being transferred. For this we (Tadziu or Keith) need the hardware address of the Ethernet card. It can be found using the commands
 
-        under Windows: ipconfig /all
+  - under Windows: ```ipconfig /all```
 
-        under Linux or MacOS: ifconfig -a
+  - under Linux or MacOS: ```ifconfig -a```
 
     (or look at the internet connection in the system settings).
 
-    If they have an ultra-thin laptop with an external Ethernet adapter then plug it in and give us its hardware address (it’s the one that appears after the device is plugged in).
+- If they have an ultra-thin laptop with an external Ethernet adapter then plug it in and give us its hardware address (it’s the one that appears after the device is plugged in).
 
 ## 10. Miscellaneous
 
