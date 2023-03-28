@@ -1,11 +1,31 @@
 ---
-title: Home page
-date: 2022-09-02
+title: Wiki Computational resources Barbara's group
+date: 2023-03-28
 ---
 
-Welcome to my blog
+Local resources
 ---
 
-Here you can find my research interest and my hobbies
+errc1
+---
+properties:
+  > Intel Xeon CPU E7-4850 v2 @ 2.30GHz
+  > Cache: 24 MB L3, Memory: 676 GB
+  > 12 cores, 96 virtual cores with HT
+accessible via:
+  > ssh from ltsp01 (aka moon): user@errc1.usm.uni-muenchen.de
+  > jupyter-notebook: https://errc1.usm.uni-muenchen.de:9999
+  > storage: 30 TB on /e/arch/ (backed-up daily), 1.1 TB on /scratch/
 
-Have fun!
+ercol1
+---
+properties:
+  > Intel Xeon Gold 6138 CPU @ 2.00GHz
+  > Cache: 27.5 MB L3, Memory: 1 TB
+  > 20 cores, 160 virtual cores with HT
+ 
+accessible via:
+  > ssh from ltsp01 (aka moon): 
+    user@ercol1.usm.uni-muenchen.de
+  > 
+
