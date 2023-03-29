@@ -35,7 +35,7 @@ properties:
 
 accessible via:
 
-  - ssh via ```ltsp01``` (aka moon):
+  - ssh:
     ```user@lxloginc2pap.lrz.de```
 
   - you need to be part of our project ```pr83pa``` (Dispersal of planetary discs by X-ray photoevaporation) to access it ([contact me](mailto:picogna@usm.lmu.de))
