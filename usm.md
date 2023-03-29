@@ -27,3 +27,8 @@ accessible via:
 more info:
 
   - [physics department webpage](https://www.it.physik.uni-muenchen.de/dienste/rechencluster/index.html)
+  - [https://collab.lmu.de/display/LMPHGST/HPC+Computing](https://collab.lmu.de/display/LMPHGST/HPC+Computing)
+  - [https://collab.lmu.de/pages/viewpage.action?spaceKey=LMPHGST&title=Accounts+and+Groups](https://collab.lmu.de/pages/viewpage.action?spaceKey=LMPHGST&title=Accounts+and+Groups)
+
+reference person:
+  - [Robert Redl](mailto:robert.redl@lmu.de)
